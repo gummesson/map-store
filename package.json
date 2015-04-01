@@ -1,0 +1,39 @@
+{
+  "name": "map-store",
+  "version": "1.0.0",
+  "description": " An observable Map-like datastore.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gummesson/map-store.git"
+  },
+  "keywords": [
+    "map",
+    "array",
+    "store",
+    "datastore"
+  ],
+  "author": "Ellen Gummesson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gummesson/map-store/issues"
+  },
+  "homepage": "https://github.com/gummesson/map-store",
+  "dependencies": {
+    "evmit": "^1.0.2",
+    "ez-map": "^1.1.1",
+    "minherits": "^1.0.0"
+  },
+  "devDependencies": {
+    "browserify": "^9.0.4",
+    "covert": "^1.0.1",
+    "smokestack": "^3.2.2",
+    "tap-closer": "^1.0.0",
+    "tape": "^3.5.0"
+  },
+  "scripts": {
+    "test": "node test/",
+    "test:browser": "browserify test/ | tap-closer | smokestack",
+    "test:cover": "covert test/"
+  }
+}
